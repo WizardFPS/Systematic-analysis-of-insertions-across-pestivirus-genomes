@@ -1,4 +1,4 @@
-# Systematic-analysis-of-insertions-across-pestivirus-genomes
+# Comprehensive analysis of insertions in BVDV suggests a possible mechanism of non-homologous recombination
 The repository to the paper "Comprehensive analysis of insertions in BVDV suggests a possible mechanism of non-homologous recombination".\
 \
 Content:\
