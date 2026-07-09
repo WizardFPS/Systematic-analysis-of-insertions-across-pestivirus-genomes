@@ -2,14 +2,14 @@
 # coding: utf-8
 
 """
-Python-based tool for that scans an NT/AA alignment and searchs for the insertions.
+Python-based tool that scans a multiple sequence alignment and identifies the insertions.
 
 Parametrs:
     - alignment_file: input file (FASTA)
     - output_fasta: output file with the insertions (FASTA)
     - output_summary: output file, table with stats (TSV)
     - min_len: minimal insertion length (int)
-    - gap_thr: gap rate threshold in a column (float)
+    - gap_thr: gap frequency threshold in a column (float)
 
 Usage:
 python insertions_search.py \
@@ -186,12 +186,12 @@ def find_insertions(alignment_file, output_fasta, output_summary, min_len=1, gap
     return found
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Insertion search in an NT/AA alignment")
+    parser = argparse.ArgumentParser(description="Insertion search in a multiple sequence alignment")
     parser.add_argument("-i", "--input", required=True, help="Input file (FASTA)")
     parser.add_argument("-o_f", "--output_fasta", required=True, help="Output file with the insertions (FASTA)")
     parser.add_argument("-o_s", "--output_summary", required=True, help="Output file, table with stats (TSV)")
     parser.add_argument("--min_len", type=int, default=1, help="Minimal insertion length")
-    parser.add_argument("--gap_thr", type=float, default=0.7, help="Gap rate threshold in a column")
+    parser.add_argument("--gap_thr", type=float, default=0.7, help="Gap frequency threshold in a column")
     parser.add_argument("--domains", help="output includes information from hmmscan table with domains, (non-mandatory)")
     parser.add_argument("--hmm", help="output includes information from HMM profiles (non-mandatory)")
 
