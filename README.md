@@ -1,5 +1,5 @@
 # Comprehensive analysis of insertions in BVDV suggests a possible mechanism of non-homologous recombination
-The repository to the paper "Comprehensive analysis of insertions in BVDV suggests a possible mechanism of non-homologous recombination".\
+The repository contains data for preprint "Comprehensive analysis of insertions in BVDV suggests a possible mechanism of non-homologous recombination" by F. Perelygin, Y. Aleshina, E. Chistiakova, A. Orlov and A. Lukashev.\
 \
 Content:\
 <strong>BVDV_AA_alignment.fasta</strong> - Bovine viral diarrhea virus (BVDV) polyprotein alignment calculated using MAFFT v7.525\
